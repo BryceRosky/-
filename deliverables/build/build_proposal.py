@@ -23,7 +23,7 @@ OUTPUT = DELIVERABLES_DIR / "thesis_proposal_luosiqi.docx"
 RENDER_OUTPUT = DELIVERABLES_DIR / "thesis_proposal_luosiqi_render_compatible.docx"
 FIGURE_UNIFIED_VALUE = DELIVERABLES_DIR / "assets" / "unified_value_framework.png"
 
-TITLE = "面向离散扩散多模态大模型的生成优化方法研究"
+TITLE = "面向多模态离散扩散模型的生成优化理论与方法"
 
 
 def section_text(source: str, chinese_no: str, next_no: str | None) -> str:
@@ -250,7 +250,8 @@ def build_equation(key: str):
         add_script("z", "t"); add_text(", ")
         add_script("M", "t"); add_text(", t, ")
         add_script("b", "t"); add_text(", ")
-        add_script("h", "t"); add_text("),    ")
+        add_script("h", "t"); add_text(", ")
+        add_script("ν", "t"); add_text("),    ")
         add_script("a", "t"); add_text(" = (")
         add_script("S", "t"); add_text(", ")
         add_script("y", "t"); add_text("(")
